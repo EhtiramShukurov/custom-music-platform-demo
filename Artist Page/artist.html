@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Artists</title>
+</head>
+<style>
+    body {
+    background-color: #1f1e23;
+    display: flex;
+    flex-direction: column;
+  }
+  body a {
+    margin: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  body h1 {
+    font-size: 40px;
+    margin-left: 30px;
+    color: white;
+    border-bottom: 2px solid green;
+  }
+  body .artistcards {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  body .artistcards > div:hover {
+    scale: 1.05;
+    transition: 1s;
+  }
+  body .artistcards > div {
+    background-color: #2f2d34;
+    width: 220px;
+    height: 40vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+  }
+  body .artistcards > div img {
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 90%;
+    height: 70%;
+  }
+  body .artistcards > div h3 {
+    color: white;
+  }
+  body .artistcards > div > #ratingstars{
+    display: flex;
+  }
+  body .artistcards > div > #ratingstars i{
+    font-size: 18px;
+    color: gold;
+  }
+</style>
+<body>
+    <a href="#">Home >> Artists</a>
+    <h1>Artists</h1>
+    <div class="artistcards">
+        <div><img src="https://i.scdn.co/image/ab67616d00001e02a790c56cff6e3463bf9935cb" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Rihanna</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b273f46b9d202509a8f7384b90de" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Justin Bieber</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2730aa032c07e9fe3ab2b3efdd5" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Dua Lipa</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d00001e02ddffdb42e2357056774dd6df" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>LP</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab6761610000e5eba5205abffd84341e5bace828" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Selena Gomez</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b273ed139c2e0e3681cc2d35e256" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Ed Sheeran</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Billie Eilish</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d00001e0281225a59e7637e4fd6eba839" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Aitch</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b27334933308ad8af9d87cd504dc" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Ariana Grande</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>The Weekend</h3>
+        </div>
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b273cc79eb11514c20ac210d0151" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Anne Marie</h3>
+        </div>
+        <div>
+            <img src="https://dice-i-scdn-co.imgix.net/image/f040656afb8bc16cd44781dd39ea3d02184f5c0f" alt="">
+            <div id="ratingstars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Miley Cyrus</h3>
+        </div>
+    </div>
+</body>
+
+</html>
