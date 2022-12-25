@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>Giriş \ Qeydiyyat</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+ <div class="container right-panel-active">
+        <div class="container__form container--signupp">
+
+        <form action=""class="from" id="form1">
+            <h2 class="form__title">Giris et</h2>
+            <input type="text" placeholder="Istifadeci" class="input"> 
+            <input type="email" placeholder="E-mail" class="input">
+            <input type="password" placeholder="parol" class="input">
+            <button class="byn">Qeyd ol </button>
+        </form>
+
+</div>
+
+    <div class="contanier__form contanier--signin">
+        <form action=""class="form" id="form2" >
+            <h2 class="from__title">Giris Et</h2>
+            <input type="email" placeholder="E-mail" class="input">
+            <input type="password" placeholder="Parol" class="input">
+            <button class="btn">Giris et</button>
+
+
+
+        </form>
+    </div>
+    
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__panel overlay--left">
+                <button class="class"id="signIn">Giris et</button>
+            </div>
+            <div class="overlay__panel overlay--right">
+                <button class="btn" id="signUp">Qeyd ol
+
+                </button>
+        </div>
+    </div>
+ </div>
+</body>
+<script>
+    const signInBtn = document.getElementById("signIn");
+    const signUpBtn = document.getElementById("signUp");
+    const firstForm = document.getElementById("form1");
+    const secondForm = document.getElementById("form2");
+    const container = document.querySelector(".container");
+
+
+    signInBtn.addEventListener("click", () =>{
+        container.classList.remove("right-panel-active")
+    })
+
+    signInBtn.addEventListener("click", () =>{
+        container.classList.remove("right-panel-active")
+    })
+</script>
+</html>
+ 
