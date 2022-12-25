@@ -1,0 +1,94 @@
+body{
+    background-color: #112149;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.container {
+    display: flex;
+    width: 80%;
+}
+.settings {
+    width: 20%;
+    background-color: rgb(45, 45, 45);
+}
+.Info{
+    width: 80%;
+    background-color: aliceblue;
+    
+}
+.set_image{
+    width :50px ;
+    height:50px ;
+}
+.img_settig_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_navbar-default{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 60px;
+}
+.nav_item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info_element{
+    margin-left: 50px;
+}
+.Table{
+    border:1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow:1px 1px 1px 1px #112149;
+    height: 430px;
+    background-color: gray;
+}
+.spotifyFree{
+    height: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+.sing{
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info_all{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.note{
+    border: 1px solid black;
+    background-color: rgb(211, 211, 211);
+    width: 90%;
+}
+.Exit_Button_Div{
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.Exit_Button{
+    border-radius: 10px;
+}
+.Exit_Button:hover{
+    border:2px solid gray;
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
