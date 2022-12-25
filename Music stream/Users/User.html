@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Users Page</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./User1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Home page/Assets/Css/style.css">
+
+</head>
+
+<body id = "grad">
+
+  <header class="fixed-top d-flex flex-wrap justify-content-start mb-4 ">
+    <button class=" btnn  navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar">
+      <span class="fa fa-bars"></span>
+    </button>
+  </header>
+
+
+  <div class="container-fluid">
+    <div  class="topimg2 offcanvas offcanvas-end text-bg-dark " tabindex="-1" id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 style="color: black;" class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div style="margin-top: 150px;" class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <br>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../Home page/home.html">Home</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Profile</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="../Artist Page/artist.html">Artists</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="../Playlist page/Playlist.html"> My Playlist</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Music Genres</a>
+          </li>
+          <br>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><a class="dropdown-item" href="#">Pricings</a></li>
+              <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="settings">
+      <div class="img_settig_div">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACFCAMAAABCBMsOAAAAMFBMVEXk5ueutLfn6erEycursbTKztDh4+Td4OG5vsHQ09W0ur2xt7ra3d7CxsnW2dqnrrFfsYbPAAACxUlEQVR4nO2a2XbjIAxAQWDALPb//+3YTtL0tDYgjAidw33KW260sCmMDQaDwWAwGAwGg8HgbwMASmuttg8fU1B+MtYd2DBr9gET0MJKyV9IKc3U2gMWs74VXiZrUA09QJtfCg8PLprFA2Z+LrF7WN1II6xXDofH3EJDXWTjrSEaaNiERBONtATn60SrAal0tKgNmLIkNjyhhc6V4I4uGOByJbgkKw2Ys0OxoYksVH4o6No1vzQpg4GoCsJgLLhQcElhAQFrsVBYICU4DwTB0NH9/AxbXwLbITv1uwQCWoKiMAzeov4qjlo4n9QvzxILU90if1N/Y4fFf2/RR3X20al9rFp9rOAFu5kkOPN1sbN3csrp48TXx+mXgcVJ0NwRcRdEsiuiwgRDUtTmDioYjuq2jKkMupcDxnx2MOpv6m/yc0KWj0Ojh9c11sdL416h6VdXcoleXqD7eI3fO8VFJhPNBjWggjz1kHxqpPDwOJ1YyaYTq8NDC/dd5BPTu8OD6SnYY5RpTZjVJxweIgBMbRwfPvP9oLVf5oNl8V43Vdl/vp+Fca96kK9+cVteDpkGCssmIM8bdVdy1CWy5WAyVwLfXVYrFpqI7AoubfAVFB589YgAm831QPlCxG6pqekQ2zliIlxUW0yBTdmZ+B2QUGnuXhaHqvEAn3fSjHm4mycOYAL9anHCau6kBXzOWTcDycvDgb0eRz1CqUT8fInVcGWLx+2y/ElBcSQP/AV4tEaluryncWulukTiNAjS8QBxlwdBJYF4ia25Tvwk/7lLkznw/Gss4GcQKI3MfNRcMk8ssnJSMhTCaWT8i6pkqo8kZ5xG7ZA1LCDs0i+LZGUQN8hTIxUKRdsgT4vEI2CD2twxHSRku93Hz12oEUg5iSWjZKZfYhEvDOyErtQi+jwM0yqbEF0+YQ6iDYlWbURUYjAYDAZ/hn8RWiRa08XUmQAAAABJRU5ErkJggg=="
+          class="set_image">
+      </div>
+      <ul>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-house"></i>Hesabın icmalı</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-pencil"></i>Profili redaktə edin</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-lock"></i>Parolu dəyişin</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-bell"></i>Bildiriş parametrləri</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-user-lock"></i>Məxfilik parametrləri</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-rotate-left"></i>Pleylistləri bərpa et</a></li>
+        <hr>
+        <li><a href=""><i class="fa-regular fa-clock"></i>Qəbzlər</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-puzzle-piece"></i>Tətbiqlər</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-clipboard"></i>İstifadə et</a></li>
+        <hr>
+      </ul>
+    </div>
+    <div class="Info">
+      <div class="info_element">
+        <h1>Hesabin Icmali</h1>
+        <p>
+        <h2>Profil</h2>
+        </p>
+        <div class="info_all">
+          <p style="color:gray; padding-top: 30px;">
+            Istifadeci adi
+          </p>
+          <p> 31k7dr3svco2vhra33bw2l5qon5a</p>
+        </div>
+        <hr>
+        <div class="info_all">
+          <p style="color:gray;">
+            E-poct
+          </p>
+          <p> tu7q3jd0h@code.edu.az</p>
+        </div>
+        <hr>
+        <div class="info_all">
+          <p style="color:gray;">
+            Ad Gunu
+          </p>
+          <p>2003 05 21</p>
+        </div>
+        <hr>
+        <div class="info_all">
+          <p style="color:gray;">
+            Olke / Region
+          </p>
+          <p>Azərbaycan</p>
+        </div>
+        <hr>
+        <button class="Exit_Button">Profili redakite edin</button>
+        <h2>Planin</h2>
+        <div class="Table">
+          <div class="spotifyFree">
+            <h1>Spotify Free</h1>
+          </div>
+          <div class="sing">
+            <p>Musiqini yalnız təsadüfi qaydada oxutma rejimində reklamlarla oxudun.</p>
+            <hr style="color:rgb(70, 70, 70);">
+            <p style="font-size: 20px;font-weight: 300;">Pulsuz</p>
+          </div>
+        </div>
+        <br>
+        <button class="Exit_Button">Premiuma qosul</button>
+        <p style="padding-top: 50px;;">Hər yerdən çıxış et
+          Bununla mobil cihaz, planşet, veb pleyer və iş masası tətbiqləri daxil olmaqla giriş etdiyiniz hər yerdə
+          Spotify-dan çıxacaqsınız. Buraya tərəfdaş cihazları (məs., səsucaldanlar, oyun konsolları və TV-lər) daxil
+          deyil,bu cihazlar üçün tətbiqlər səhifənizə keçin və GİRİŞİ SİL seçimini edin.
+        </p>
+        <div class="note">
+          <p>Qeyd: Çıxışın veb pleyerdə qüvvəyə minməsi 1 saata qədər çəkə bilər.</p>
+          <div>
+          </div>
+        </div>
+        <div class="Exit_Button_Div"><button class="Exit_Button">
+            <p> Her Seyden cixis et</p>
+          </button></div>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
